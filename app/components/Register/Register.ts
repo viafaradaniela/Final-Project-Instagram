@@ -43,7 +43,7 @@ export class Register extends HTMLElement{
             <app-form></app-form>
             </section>
             <button>
-            <span>Log in with facebook</span>
+            <span>Sing up with facebook</span>
             </button>
             <P class="o">OR</P>
             <p class="text2">Users of our service may have uploaded your contact <br> information on Instagram. <b> More information </b></p>
