@@ -1,0 +1,49 @@
+.HeadText{
+    position: relative;
+    top: -280px;
+    left: 445px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.pp{
+    position: relative;
+    top: -222px;
+    left: 380px;
+}
+.pti{
+    position: relative;
+    top: -270px; 
+    left: 375px;
+}
+.options{
+    position:relative;
+    left: 636px;
+    top: -250px;
+}
+.save{
+    position: relative;
+    left: 231px;
+    
+}
+.lowText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    position: relative;
+    left: 380px;
+    top:-250px;
+}
+.otherText{
+    color: darkgrey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    position: relative;
+    left: 380px;
+    top:-250px;
+}
+.op{
+    position:relative;
+    left: 380px;
+    top: -250px;
+}
+
+

@@ -1,0 +1,148 @@
+body{
+    background-color: rgb(249, 249, 249);
+}
+
+.back{
+    position: absolute;
+    display: block;
+    top:-75px; 
+    left: -50px;
+ 
+}
+.Head{
+    position: absolute;
+    top: 20px; 
+    left: 220px;
+ 
+}
+.igstories{
+    position: absolute;
+    top: 110px; 
+    left: 350px;
+}
+.myprofilepic{
+    position: absolute;
+    top: 128px; 
+    left: 780px; 
+}
+.myprofileinformation{
+    
+    position: absolute;
+    top: 128px; 
+    left: 870px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.pp{
+    position: relative;
+    top: 250px; 
+    left: 800px; 
+}
+.ppinformation{
+    
+    position: relative;
+    top: 200px; 
+    left: 850px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+.lowinformation{
+    position: absolute;
+    top: 680px; 
+    left: 798px;
+}
+.suggest{
+    
+    position: absolute;
+    top: 200px; 
+    left: 780px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgb(213, 213, 213);
+}
+.suggest1{
+    
+    position: absolute;
+    top: 202px; 
+    left: 1078px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgb(30, 30, 30);
+}
+.suggest2{
+    
+    position: absolute;
+    top: 145px; 
+    left: 1078px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgb(20, 157, 255);
+}
+.follow{
+    
+    position: absolute;
+    top: 250px; 
+    left: 1078px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgb(20, 157, 255);
+}
+.follow2{
+    
+    position: absolute;
+    top: 340px; 
+    left: 1078px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgb(20, 157, 255);
+}
+.follow3{
+    
+    position: absolute;
+    top: 426px; 
+    left: 1078px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgb(20, 157, 255);
+}
+.follow4{
+    
+    position: absolute;
+    top: 512px; 
+    left: 1078px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgb(20, 157, 255);
+}
+.follow5{
+    
+    position: absolute;
+    top: 600px; 
+    left: 1078px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgb(20, 157, 255);
+}
+.igpost{
+    position: absolute;
+    top: 245px; 
+    left: 350px;
+}
+.igpost2{
+    position: absolute;
+    top: 1015px; 
+    left: 350px;
+}
+.igpost3{
+    position: absolute;
+    top: 1785px; 
+    left: 350px;
+}.igpost4{
+    position: absolute;
+    top: 2558px; 
+    left: 350px;
+}.igpost5{
+    position: absolute;
+    top: 3332px; 
+    left: 350px;
+}
