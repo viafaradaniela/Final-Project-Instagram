@@ -1,24 +1,24 @@
 .HeadText{
     position: relative;
-    top: -280px;
+    top: -245px;
     left: 445px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
 .pp{
     position: relative;
-    top: -222px;
+    top: -185px;
     left: 380px;
 }
 .pti{
     position: relative;
-    top: -270px; 
+    top: -240px; 
     left: 375px;
 }
 .options{
     position:relative;
-    left: 636px;
-    top: -250px;
+    left: 630px;
+    top: -210px;
 }
 .save{
     position: relative;
@@ -30,7 +30,7 @@
     font-size: 14px;
     position: relative;
     left: 380px;
-    top:-250px;
+    top:-238px;
 }
 .otherText{
     color: darkgrey;
@@ -38,12 +38,12 @@
     font-size: 14px;
     position: relative;
     left: 380px;
-    top:-250px;
+    top:-230px;
 }
 .op{
     position:relative;
-    left: 380px;
-    top: -250px;
+    left: 377px;
+    top: -235px;
 }
 
 

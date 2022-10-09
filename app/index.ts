@@ -6,7 +6,7 @@ enum Screens {
 }
 
 class AppContainer extends HTMLElement{
-    screen: Screens = Screens.register;
+    screen: Screens = Screens.home;
 
     constructor(){
         super();
