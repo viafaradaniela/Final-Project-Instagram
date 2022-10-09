@@ -27,10 +27,11 @@ class IgStories extends HTMLElement {
     render() {
         if (this.shadowRoot) {
             this.shadowRoot.innerHTML = `
-            <link rel="stylesheet" href="./components/Home/components/IgStories/StyleStories.css">
-  
+            <link rel="stylesheet" href="./components/Home/components/IgStories/Style.Stories.css">
+
+            
             <img src="${this.igs}" width="70" class="storie">
-               
+
 
             `;
         }

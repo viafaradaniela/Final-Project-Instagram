@@ -86,18 +86,19 @@ class IgHome  extends HTMLElement {
             </p>
 
             <div>
-             
-             <img src="img/igstories.png" width="400" height= "127" class="igstories">
+            <div class="card"></div>
              <img src="img/myprofilepic.png" width="70" class="myprofilepic">
              <img src="img/lowinformation.png" width="300" class="lowinformation">
-             
              <div>
-              <img src="img/igpost.png" height="758"  width="400" class="igpost">
-              <img src="img/igpost.png" height="758"  width="400" class="igpost2">
-              <img src="img/igpost.png" height="758"  width="400" class="igpost3">
-              <img src="img/igpost.png" height="758"  width="400" class="igpost4">
-              <img src="img/igpost.png" height="758"  width="400" class="igpost5">
-             </div>
+            <div class="card2"></div>
+            <div class="card3"></div>
+            <div class="card4"></div>
+            <div class="card5"></div>
+            <div class="card6"></div>
+
+
+
+             
             </div>
             `;
         }

@@ -1,7 +1,9 @@
 .storie{
     
-    position: absolute;
-    top: 315px; 
-    left: 360px; 
+    position: relative;
+    float:right;
+    top: -360px; 
+    right: 1130px; 
 
 }
+

@@ -123,26 +123,82 @@ body{
     font-size: 13px;
     color: rgb(20, 157, 255);
 }
-.igpost{
+.card{
+    position: absolute;
+    top: 110px; 
+    left: 350px;
+    width: 398px;
+    height: 125px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: rgb(211, 211, 211);
+    border: 1px solid rgb(211, 211, 211);
+
+  
+}
+.card2{
     position: absolute;
     top: 245px; 
     left: 350px;
+    width: 398px;
+    height: 788px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: rgb(211, 211, 211);
+    border: 1px solid rgb(211, 211, 211);
+
+  
 }
-.igpost2{
+.card3{
     position: absolute;
     top: 1015px; 
     left: 350px;
+    width: 398px;
+    height: 788px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: rgb(211, 211, 211);
+    border: 1px solid rgb(211, 211, 211);
+
+  
 }
-.igpost3{
+.card4{
     position: absolute;
     top: 1785px; 
     left: 350px;
-}.igpost4{
+    width: 398px;
+    height: 788px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: rgb(211, 211, 211);
+    border: 1px solid rgb(211, 211, 211);
+
+  
+}
+.card5{
     position: absolute;
     top: 2558px; 
     left: 350px;
-}.igpost5{
+    width: 398px;
+    height: 788px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: rgb(211, 211, 211);
+    border: 1px solid rgb(211, 211, 211);
+
+  
+}
+.card6{
     position: absolute;
     top: 3332px; 
     left: 350px;
+    width: 398px;
+    height: 788px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: rgb(211, 211, 211);
+    border: 1px solid rgb(211, 211, 211);
+
+  
 }
+

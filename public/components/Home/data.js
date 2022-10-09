@@ -54,7 +54,7 @@ const data = [
         nameprofile: "hbomax",
         pti: "img/picfeedhbo.png",
         likes: "17.756.789",
-        caption: "#EUPHORIA has been renewed for season 3.",
+        caption: "#EUPHORIA has been renewed.",
         comment: 5.278,
         date: 2,
         nameprofile1: "hbomax",
