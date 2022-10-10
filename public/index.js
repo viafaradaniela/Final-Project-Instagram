@@ -8,7 +8,7 @@ var Screens;
 class AppContainer extends HTMLElement {
     constructor() {
         super();
-        this.screen = Screens.home;
+        this.screen = Screens.register;
         this.attachShadow({ mode: 'open' });
     }
     connectedCallback() {
