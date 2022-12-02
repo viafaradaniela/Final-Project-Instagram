@@ -33,7 +33,7 @@ export class Register extends HTMLElement {
         <link rel="stylesheet" href="./components/Register/StyleRegister.css">
 
             <div class="card">
-            <img src="img/logo.png" height="50" alt="iglogo" class="iglogo">
+            <img src="img/logo.png" height="50" alt="Instagram Logo" class="iglogo">
             <p class="text1">Sign up to view photos and videos<br>of your friends</p>
             <section class="form">
             <app-form></app-form>
@@ -45,7 +45,7 @@ export class Register extends HTMLElement {
             <p class="text2">Users of our service may have uploaded your contact <br> information on Instagram. <b> More information </b></p>
             <p class="text3">By signing up, you agree to <b>our Terms</b>, <br> our <b>Privacy Policy</b> and our <b>Cookies Policy. </b></p>
             </div>
-            <img src="img/app.png" height="95" alt="apps" class="apps">
+            <img src="img/app.png" height="95" alt="Aplication Apps" class="apps">
         `;
     }
 }

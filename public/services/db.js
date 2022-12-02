@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-import { getFirestore, collection, query, where, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+import { getFirestore, collection, query, where, getDocs, addDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 const firebaseConfig = {
     apiKey: "AIzaSyDSK6JaFe5hZ5f4b4ryu9yM1QT91dS6pZo",
     authDomain: "dcatest-ef7b9.firebaseapp.com",
@@ -21,6 +21,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const usersRef = collection(db, "usuarios");
+const NewPost = collection(db, "NewPost");
 export const queryUser = ({ email, password }) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const q = query(usersRef, where("email", "==", email), where("password", "==", password));
@@ -49,6 +50,45 @@ export const addUser = ({ email, password }) => __awaiter(void 0, void 0, void 0
         return true;
     }
     catch (error) {
+        return false;
+    }
+});
+export const listenPost = (cb) => {
+    try {
+        onSnapshot(collection(db, "NewPost"), (documentos) => {
+            const post = documentos.docs.map((doc) => ({ id: doc.id, data: doc.data() }));
+            cb(post);
+        });
+    }
+    catch (error) {
+    }
+};
+export const getPost = () => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        //Crear arreglo
+        const post = [];
+        //Hacer la petición a la base de datos a mi colección de post
+        const q = query(NewPost);
+        const querySnapshot = yield getDocs(q);
+        //Desglosar los documentos de forma individual y guardarlos en el arreglo
+        querySnapshot.forEach(doc => {
+            post.push({ id: doc.id, data: doc.data() });
+        });
+        return post;
+    }
+    catch (error) {
+    }
+});
+export const addPost = ({ caption, image }) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const docRef = yield addDoc(collection(db, "NewPost"), {
+            caption,
+            image
+        });
+        return true;
+    }
+    catch (error) {
+        console.log(error);
         return false;
     }
 });

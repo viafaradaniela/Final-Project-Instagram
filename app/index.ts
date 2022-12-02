@@ -2,7 +2,8 @@ import "./components/index.js";
 enum Screens {
     login,
     register,
-    home
+    home,
+    newpost
 }
 
 class AppContainer extends HTMLElement{
@@ -22,6 +23,18 @@ class AppContainer extends HTMLElement{
             this.render();
         })
 
+        const newpost = this.shadowRoot?.querySelector("my-newpost");
+        newpost?.addEventListener("post-fullfiled", ()=>{
+            this.screen = Screens.home;
+            this.render();
+        })
+
+        const home = this.shadowRoot?.querySelector("my-newpost");
+        home?.addEventListener("my-igpost", ()=>{
+            this.screen = Screens.home;
+            this.render();
+        })
+
         const register = this.shadowRoot?.querySelector("app-register");
         register?.addEventListener("register-success", ()=>{
             this.screen = Screens.login;
@@ -29,6 +42,18 @@ class AppContainer extends HTMLElement{
 
             const login = this.shadowRoot?.querySelector("app-login");
             login?.addEventListener("login-success", ()=>{
+                this.screen = Screens.home;
+                this.render();
+            })
+
+            const newpost = this.shadowRoot?.querySelector("my-newpost");
+            newpost?.addEventListener("post-fullfiled", ()=>{
+                this.screen = Screens.home;
+                this.render();
+            })
+
+            const home = this.shadowRoot?.querySelector("my-newpost");
+            home?.addEventListener("my-igpost", ()=>{
                 this.screen = Screens.home;
                 this.render();
             })
@@ -51,6 +76,10 @@ class AppContainer extends HTMLElement{
             
             case Screens.register:
                 this.shadowRoot.innerHTML = "<app-register></app-register>"
+            break;
+
+            case Screens.newpost:
+                this.shadowRoot.innerHTML = "<my-newpost></my-newpost>"
             break;
 
             default:

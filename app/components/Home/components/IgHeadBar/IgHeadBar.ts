@@ -1,13 +1,29 @@
-class IgHeadBar extends HTMLElement{
+export class IgHeadBar extends HTMLElement{
    
     constructor(){
         super();
         this.attachShadow({mode: "open"});
+        
+        
        
     }
+
     connectedCallback(){
+
+        const createPostButton = this.shadowRoot?.querySelector("button");
+        createPostButton?.addEventListener('click', () => {
+            console.log('button clicked');
+            
+            const event: CustomEvent = 
+                new CustomEvent("my-igpost",{composed: true});
+
+            this.dispatchEvent(event);
+
+        });
+
         this.render();
     }
+
 
     render(){
         if(this.shadowRoot){
@@ -17,15 +33,18 @@ class IgHeadBar extends HTMLElement{
             <section>
             <nav class="headbar">
             <div class="head-wrapper">
-             <img src="./img/logo.png" class="logo" alt="">
+             <img src="./img/logo.png" class="logo" alt="Instagram Logo">
              <div class="head-items">
-             <img src="./img/homevar.png" class="icon" alt="">
-             <img src="./img/chatvar.png" class="icon" alt="">
-             <img src="./img/uploadvar.png" class="icon" alt="">
-             <img src="./img/serachvar.png" class="icon" alt="">
-             <img src="./img/likevar.png" class="icon" alt="">
-             <img src="./img/minipp.png" class="icon" alt="">
-             <img src="./img/lookvar.png" class="look" alt="">
+             <img src="./img/homevar.png" class="icon" alt="Home">
+             <img src="./img/chatvar.png" class="icon" alt="Chats">
+             <button class="icon-btn add-btn">
+             <div class="add-icon"></div>
+             <div class="btn-txt">Add Post</div>
+             </button>
+             <img src="./img/serachvar.png" class="icon" alt="Searc">
+             <img src="./img/likevar.png" class="icon" alt="Likes">
+             <img src="./img/minipp.png" class="icon" alt="My Profile">
+             <img src="./img/lookvar.png" class="look" alt="Search Bar">
 
                </div>
              </div>

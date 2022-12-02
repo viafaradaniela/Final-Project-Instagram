@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-import { getFirestore, collection, query, where, getDocs, addDoc} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+import { getFirestore, collection, query, where, getDocs, addDoc, onSnapshot} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDSK6JaFe5hZ5f4b4ryu9yM1QT91dS6pZo",
@@ -15,6 +15,7 @@ const firebaseConfig = {
   const db = getFirestore(app);
 
   const usersRef = collection(db,"usuarios");
+  const NewPost = collection(db,"NewPost");
 
   export const queryUser = async ({
     email,
@@ -58,6 +59,56 @@ const firebaseConfig = {
         });
         return true;
     } catch (error) {
+        return false;
+    }
+  }
+
+  export const listenPost = (cb: (post:any) => void) =>{
+    try {
+      onSnapshot(collection(db, "NewPost"), (documentos) => {
+        const post = documentos.docs.map( (doc:any) => ({id: doc.id, data: doc.data()}));
+        cb(post);
+      });
+    } catch (error) {
+      
+    }
+  }
+
+  export const getPost = async () =>{
+    try {
+      //Crear arreglo
+      const post = [];
+      //Hacer la petición a la base de datos a mi colección de post
+      const q = query(NewPost);
+      const querySnapshot = await getDocs(q);
+
+      //Desglosar los documentos de forma individual y guardarlos en el arreglo
+      querySnapshot.forEach(doc => {
+        post.push({id: doc.id, data: doc.data()});
+      });
+      return post;
+    } catch (error) {
+      
+    }
+  }
+
+  export const addPost = async ({
+caption,
+image
+  }:{
+    caption: String
+    image: String
+    
+  }) => {
+    try {
+        const docRef = await addDoc(collection(db,"NewPost"),{
+          caption,
+          image
+        });
+        return true;
+    } catch (error) {
+      console.log(error);
+      
         return false;
     }
   }

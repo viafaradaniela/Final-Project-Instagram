@@ -3,10 +3,10 @@ body{
 }
 .card{
     position: absolute;
-    left: 800px;
+    left: 600px;
     top: 70px;
     width: 335px;
-    height: 456px;
+    height: 356px;
     background-color: #ffffff;
     border-radius: 0px;
     border-color: rgb(161, 161, 161);
@@ -19,35 +19,51 @@ body{
     left: 90px;
     top: 50px;
 }
-.form{
+
+.input-group {
+    position: relative;
+    left: 50px;
+    top: 125px;
+   }
+
+   .input-group2 {
+    position: relative;
+    left: 50px;
+    top: 155px;
+   }
+   
+   .input {
+    border: solid 1.5px #1a1a1a;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #252525;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label {
     position: absolute;
-    top: 100px;
-}
-.o{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(197, 197, 197);  
-    font-size: 15px;
-    position: absolute;
-    top: 298px;
-    left: 148px;
-    text-align: center;
-}
-.apps{
-    position: absolute;
-    top: 550px;
-    left: 820PX;
-}
-.lowerinformation{
-    position: absolute;
-    top: 700px;
-    left: 210PX;
-}
-.iglogin{
-    position: absolute;
-    top: 10px;
-    left: 260PX;
-}
-button {
+    left: 15px;
+    color: #373737;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #353535;
+   }
+   
+   .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #212121;
+    padding: 0 .2em;
+    color: #ffffff;
+   }
+
+   button {
     display: inline-block;
     border-radius: 4px;
     background-color: #2278f8;
@@ -58,7 +74,7 @@ button {
     width: 250px;
     height: 40px;
     position: absolute;
-    top: 350px;
+    top: 280px;
     left: 35px;
     transition: all 0.5s;
     cursor: pointer;

@@ -32,7 +32,7 @@ export class Login extends HTMLElement {
         <link rel="stylesheet" href="./components/Login/StyleLogin.css">
 
         <div class="card">
-        <img src="img/logo.png" height="50" alt="iglogo" class="iglogo">
+        <img src="img/logo.png" height="50" alt="instagram Logo" class="iglogo">
         <section class="form">
         <app-form></app-form>
         </section>
@@ -41,8 +41,10 @@ export class Login extends HTMLElement {
         </button>
         <P class="o">OR</P>
         </div>
-        <img src="img/iglogin.png" height="650" alt="iglogin" class="iglogin">
+        <img src="img/iglogin.png" height="650" alt="instagram Login" class="iglogin">
         <img src="img/app.png" height="95" alt="apps" class="apps">
+        <img src="img/lowerinformationlogin.png" height="65" alt="Lower Login Information" class="lowerinformation">
+
         `;
     }
 }
