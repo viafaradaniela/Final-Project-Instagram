@@ -41,7 +41,7 @@ class IgStories  extends HTMLElement {
             <link rel="stylesheet" href="./components/Home/components/IgStories/Style.Stories.css">
 
             
-            <img src="${this.igs}" width="70" class="storie">
+            <img src="${this.igs}" width="70" class="storie" alt="Storys User Top Bar">
 
 
             `;

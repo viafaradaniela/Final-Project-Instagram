@@ -46,7 +46,7 @@ class IgHome  extends HTMLElement {
             </p>
 
             
-            <img src=${this.pp} width="40" class="pp">
+            <img src=${this.pp} width="40" class="pp" alt="Profile Picture">
 
             <p class="ppinformation">
              <b>${this.username}</b><br>
@@ -87,8 +87,8 @@ class IgHome  extends HTMLElement {
 
             <div>
             <div class="card"></div>
-             <img src="img/myprofilepic.png" width="70" class="myprofilepic">
-             <img src="img/lowinformation.png" width="300" class="lowinformation">
+             <img src="img/myprofilepic.png" width="70" class="myprofilepic" alt="Profile Picture">
+             <img src="img/lowinformation.png" width="300" class="lowinformation" alt="Low Information">
              <div>
             <div class="card2"></div>
             <div class="card3"></div>

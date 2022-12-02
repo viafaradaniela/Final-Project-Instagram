@@ -71,9 +71,9 @@ render() {
 
         <link rel="stylesheet" href="./components/Home/components/IgPost/StyleIgPost.css"
             
-            <img src="img/ringstorys.png"> 
-            <img src= ${this.ppp} height="55" class="pp"> 
-            <img src="img/options.png" height="5" class="options"> 
+            <img src="img/ringstorys.png" alt="User Storys"> 
+            <img src= ${this.ppp} height="55" class="pp" alt="Profile Picture"> 
+            <img src="img/options.png" height="5" class="options" alt="Options Post"> 
         
             <p class="HeadText">
             <b>${this.nameprofile}</b><br>
@@ -81,13 +81,13 @@ render() {
             </p>
              
         
-            <img src=${this.pti} height="500" class="pti"> 
+            <img src=${this.pti} height="500" class="pti" alt="Profile Picture Post"> 
          
             <div class="op">
-            <img src="img/like.png" height="20">&nbsp;&nbsp;
-            <img src="img/comment.png" height="20">  &nbsp;
-            <img src="img/send.png" height="20">
-            <img src="img/save.png" height="20" class="save">
+            <img src="img/like.png" height="20" alt="Like Post">&nbsp;&nbsp;
+            <img src="img/comment.png" height="20" alt="Comments Post">  &nbsp;
+            <img src="img/send.png" height="20" alt="Send Post">
+            <img src="img/save.png" height="20" class="save" alt="Save Post">
             </div> 
         
             <p class="lowText">
